@@ -8,3 +8,104 @@
 * {
     outline: 1px dotted black;
 }
+
+
+main { 
+  display: grid;
+  grid-template-columns: 1fr 700px 1fr;
+  width: 100%;
+  grid-auto-rows: auto;
+}
+
+div {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+aside {
+  grid-column-start: 3;
+  grid-row-start: 3;
+  background-image: url("https://i.pinimg.com/originals/b2/b4/28/b2b4288fc148c3d974b7b763d913ae43.jpg");
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body {  
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://i.pinimg.com/originals/ba/09/fa/ba09fa142f3918296fa38ba88ac2a418.png");
+  background-repeat: repeat-x;
+  background-color: #071237;
+}
+
+header {
+  background-color: #CD5C5C;
+  width: 100%;
+  font-family: "Molle", cursive;
+  padding-left: 24px;
+  z-index:10;
+  position: fixed;
+}
+
+h1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+blockquote {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: white;
+  font-family: "Molle", sans-serif;
+  font-size: 4em;
+  z-index: 5;
+  padding-left: 74px;
+}
+
+
+.info {
+ grid-row-start: 2;
+ grid-column-start: 1;
+  grid-column-end: 4;
+  color: white;
+  font-family: "Lora", sans-serif;
+  height: 800px;
+  background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
+  background-size: cover;
+}
+
+h2 {
+  font-size: 2em;
+}
+.text {
+  width: 600px;
+  padding: 300px;
+  font-size: 24px;
+}
+
+.cast {
+  grid-row-start: 3;
+  display: flex;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  flex-wrap: wrap;
+  font-family: Molle, cursive;
+  color: white;
+  padding-top: 100px;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #CD5C5C;
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-left: 24px;
+}
+
