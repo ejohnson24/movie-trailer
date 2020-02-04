@@ -4,12 +4,33 @@
   * Change Background Color
   * Outline Elements
 */
+/*header styling*/
 
-* {
-    outline: 1px dotted black;
+header {
+  display: flex;
+  background-color: #CD5C5C;
+  width: 100%;
+  font-family: "Molle", cursive;
+  padding-left: 24px;
+  z-index:10;
+  position: fixed;
+  filter: drop-shadow(0px 5px 3px rgba(0,0,0,0.5));
+  background-image: url("https://media.gettyimages.com/photos/seamless-linen-canvas-background-picture-id168769097?s=612x612");
+}
+
+#cat {
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+}
+
+#cat:hover {
+   transform: rotate(20deg);
 }
 
 
+
+/*body styling*/
 main { 
   display: grid;
   grid-template-columns: 1fr 700px 1fr;
@@ -17,33 +38,28 @@ main {
   grid-auto-rows: auto;
 }
 
+.kikiImage {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  width: 400px;
+  padding-top: 100px;
+}
+
+.kikiImage:hover {
+  transform: rotate(30deg);
+}
+
 div {
   grid-column-start: 2;
   grid-column-end: 2;
-}
-aside {
-  grid-column-start: 3;
-  grid-row-start: 3;
-  background-image: url("https://i.pinimg.com/originals/b2/b4/28/b2b4288fc148c3d974b7b763d913ae43.jpg");
-  background-repeat: no-repeat;
-  color: white;
+  grid-row-start: 1;
 }
 
 body {  
   display: flex;
   flex-wrap: wrap;
   background-image: url("https://i.pinimg.com/originals/ba/09/fa/ba09fa142f3918296fa38ba88ac2a418.png");
-  background-repeat: repeat-x;
   background-color: #071237;
-}
-
-header {
-  background-color: #CD5C5C;
-  width: 100%;
-  font-family: "Molle", cursive;
-  padding-left: 24px;
-  z-index:10;
-  position: fixed;
 }
 
 h1 {
@@ -51,17 +67,24 @@ h1 {
     grid-column-end: 2;
 }
 
+/*Center text styling*/
+
 blockquote {
   grid-row-start: 2;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
   color: white;
   font-family: "Molle", sans-serif;
-  font-size: 4em;
+  font-size: 3em;
   z-index: 5;
   padding-left: 74px;
 }
 
+blockquote:hover {
+  filter: opacity(90%);
+}
 
 .info {
  grid-row-start: 2;
@@ -74,38 +97,108 @@ blockquote {
   background-size: cover;
 }
 
-h2 {
-  font-size: 2em;
-}
 .text {
   width: 600px;
-  padding: 300px;
+  padding: 400px;
   font-size: 24px;
 }
 
+h2 {
+  font-size: 2em;
+}
+
+
+
+
+.castTitle {
+  grid-row-start: 3;
+  font-family: Molle;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  z-index: 2;
+}
 .cast {
   grid-row-start: 3;
   display: flex;
   align-items: center;
+  justify-content: center;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   flex-wrap: wrap;
   font-family: Molle, cursive;
-  color: white;
+  font-size: 1.5em;
+  color: black;
   padding-top: 100px;
+  text-align: center;
+  background-image: url("https://3.bp.blogspot.com/-RD4_fapzE4I/Wnhq8w_8-II/AAAAAAAADpQ/oMTXT7xcKnQJfEJ2hRORryWWo6vcFpdygCLcBGAs/s1600/Kiki%2527s%2BDelivery%2BService%2B-%2B015.jpg");
+  background-size: cover;
+  filter:grayscale(20%);
+}
+
+figure {
+  padding: 10px;
+}
+
+h3 {
+  background-image: url("https://i.pinimg.com/originals/99/ab/12/99ab125f031df4236053b55199390682.jpg?");
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.portrait:hover {
+  filter: none;
 }
 
 .portrait {
   width: 200px;
   height: 200px;
   object-fit: cover;
+  filter: grayscale(80%);
+  border-radius: 24px;
 }
+
+
+/*footer styling*/
 
 footer {
   background-color: #CD5C5C;
   grid-row-start: 5;
   grid-column-start: 1;
   grid-column-end: 4;
-  padding-left: 24px;
+  padding-left: 50px;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  font-family: "Lora", serif;
+  font-size: 1.2em;
+  color: white;
+  background-image: url("https://coverfiles.alphacoders.com/597/59770.jpg");
+  background-size: cover;
+  filter: grayscale(20%);
+}
+
+/*plyer styling*/
+
+.plyr__control--overlaid {
+  background: #CD5C5Cl;
+}
+
+.plyr--video .plyr__control:hover {
+  background: #CD5C5C;
+}
+
+.plyr--full-ui input[type="range"] {
+  color: #CD5C5C;
+}
+
+.plyr--video {
+  font-size: 2em;
+}
+
+.plyr__controls {
+  color: #CD5C5C;
 }
 
