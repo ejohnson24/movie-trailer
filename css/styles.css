@@ -94,11 +94,12 @@ blockquote {
   height: 800px;
   background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text {
-  width: 600px;
-  padding: 400px;
   font-size: 24px;
 }
 
@@ -205,7 +206,7 @@ footer {
 @media only screen and (max-width: 1200px) {
   main { 
    display: grid;
-   grid-template-columns: 1fr 400px;
+   grid-template-columns: 200px 1fr;
    width: 100%;
    grid-auto-rows: auto;
  }
@@ -213,8 +214,9 @@ footer {
     .kikiImage {
    grid-column-start: 1;
    grid-row-start: 1;
-   width: 400px;
+   width: 350px;
    padding-top: 100px;
+  padding-right: 100px;
  }
     
     body {  
@@ -225,14 +227,13 @@ footer {
     
     .info {
   grid-row-start: 2;
-  grid-column-start: 1;
-   grid-column-end: 4;
+   width: 100%;
    color: white;
    font-family: "Lora", sans-serif;
    height: 500px;
    background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
    background-size: cover;
-    width: 100%;
+   background-position: 110%;
  }
     
     footer {
@@ -301,10 +302,10 @@ footer {
    height: 500px;
    background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
    background-size: cover;
-    width: 100%;
+    background-position: 30%;
  }
     
-    footer {
+  footer {
    background-color: #CD5C5C;
    grid-row-start: 5;
    grid-column-start: 1;
@@ -355,4 +356,22 @@ footer {
   #cat:hover {
     transform: rotate(20deg);
  }
+
+ .portrait {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  filter: grayscale(80%);
+  border-radius: 15px;
+  padding: 0px;
+}
+
+h3 {
+  background-image: url("https://i.pinimg.com/originals/99/ab/12/99ab125f031df4236053b55199390682.jpg?");
+  padding: 5px;
+  border-radius: 10px;
+  font-size: .7em;
+}
+
+
  }
