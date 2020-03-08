@@ -22,6 +22,7 @@ header {
   background-color: #3F406C;
   color: white;
 }
+
 #cat {
   width: 40px;
   height: 40px;
@@ -34,6 +35,7 @@ header {
 
 #cat:hover {
    transform: rotate(20deg);
+   cursor: pointer;
 }
 
 
@@ -158,6 +160,9 @@ h2 {
   background-image: url("https://3.bp.blogspot.com/-RD4_fapzE4I/Wnhq8w_8-II/AAAAAAAADpQ/oMTXT7xcKnQJfEJ2hRORryWWo6vcFpdygCLcBGAs/s1600/Kiki%2527s%2BDelivery%2BService%2B-%2B015.jpg");
   background-size: cover;
   filter:grayscale(20%);
+}
+.castTombo {
+  /Users/ellie/Documents/GitHub/movie-trailer/tombo&kiki.jpg
 }
 
 figure {
