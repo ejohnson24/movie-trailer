@@ -1,5 +1,4 @@
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
     const player = new Plyr( '#player', {
   
@@ -12,6 +11,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     
     console.log( player );
+
+    let button = document.querySelector('#cat');
+    let body = document.querySelector('body');
+     button.addEventListener( 'click' , function(){
+  
+     body.classList.toggle('dark');
 });
+
+});
+
 
 

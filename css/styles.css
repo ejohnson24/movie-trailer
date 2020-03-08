@@ -63,6 +63,16 @@ body {
   flex-wrap: wrap;
   background-image: url("https://i.pinimg.com/originals/ba/09/fa/ba09fa142f3918296fa38ba88ac2a418.png");
   background-color: #071237;
+  background-size: 100%;
+}
+
+.dark {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-position: 85% 120%;
+  background-size: 100%;
+  background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
 }
 
 h1 {
