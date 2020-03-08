@@ -13,9 +13,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log( player );
 
     let button = document.querySelector('#cat');
+    let cat = document.querySelector('#cat')
     let body = document.querySelector('body');
+    let header = document.querySelector('header');
+    let info = document.querySelector('.info');
+
      button.addEventListener( 'click' , function(){
-  
+    
+     cat.classList.toggle('catDark')
+     info.classList.toggle('darkInfo');
+     header.classList.toggle('darkHeader');
      body.classList.toggle('dark');
 });
 
