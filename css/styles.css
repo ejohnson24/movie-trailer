@@ -15,7 +15,7 @@ header {
   z-index:10;
   position: fixed;
   filter: drop-shadow(0px 5px 3px rgba(0,0,0,0.5));
-  background-image: url("https://media.gettyimages.com/photos/seamless-linen-canvas-background-picture-id168769097?s=612x612");
+  background-color:#CAB9B2;
 }
 
 #cat {
@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background-position: 85% 120%;
+  background-position: 85% 130%;
   background-size: 100%;
   background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
 }
@@ -84,34 +84,32 @@ h1 {
 
 blockquote {
   grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  display: flex;
-  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 2;
   color: white;
   font-family: "Molle", sans-serif;
-  font-size: 3em;
+  font-size: 1.5em;
   z-index: 5;
-  padding-left: 74px;
 }
 
 .info {
  grid-row-start: 2;
- grid-column-start: 1;
-  grid-column-end: 4;
+ grid-column-start: 2;
+  grid-column-end: 2;
   color: white;
-  font-family: "Lora", sans-serif;
-  height: 800px;
-  background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
+  font-family: "Lato", sans-serif;
+  height: 140px;
+  background-color: #3D98A3;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 36px;
+  padding-top: 50px;
 }
 
 .text {
-  font-size: 24px;
-  padding: 200px;
+  font-size: 16px;
 }
 
 h2 {
