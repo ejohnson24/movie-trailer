@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
      body.classList.toggle('dark');
 });
 
+    let portrait = document.querySelector('#tombo');
+    let background = document.querySelector('.cast');
+
+    portrait.addEventListener( 'click' , function(){
+    
+      background.classList.toggle('castTombo');
+ });
+
 });
 
 

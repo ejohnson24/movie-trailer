@@ -71,18 +71,20 @@ div {
 body {  
   display: flex;
   flex-wrap: wrap;
-  background-image: url("https://i.pinimg.com/originals/ba/09/fa/ba09fa142f3918296fa38ba88ac2a418.png");
+  background-image: url("/KorikoRooftop.png");
   background-color: #071237;
   background-size: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .dark {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background-position: 85% 130%;
+  object-fit: cover;
   background-size: 100%;
-  background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
+  background-image: url("/KorikoNight.jpg");
 }
 
 h1 {
@@ -127,23 +129,6 @@ blockquote {
   text-align: justify;
 }
 
-h2 {
-  font-size: 2em;
-}
-
-
-
-
-.castTitle {
-  grid-row-start: 3;
-  font-family: Molle;
-  font-size: 2em;
-  color: black;
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  z-index: 2;
-}
 .cast {
   grid-row-start: 3;
   display: flex;
@@ -155,37 +140,44 @@ h2 {
   font-family: Molle, cursive;
   font-size: 1.5em;
   color: black;
-  padding-top: 100px;
   text-align: center;
   background-image: url("https://3.bp.blogspot.com/-RD4_fapzE4I/Wnhq8w_8-II/AAAAAAAADpQ/oMTXT7xcKnQJfEJ2hRORryWWo6vcFpdygCLcBGAs/s1600/Kiki%2527s%2BDelivery%2BService%2B-%2B015.jpg");
   background-size: cover;
-  filter:grayscale(20%);
 }
+
 .castTombo {
-  background-image: url("/Users/ellie/Documents/GitHub/movie-trailer/tombo&kiki.jpg");
+  background-image: url("/tombo&kiki.jpg");
+  background-size: cover;
+  background-position: 100%;
 }
 
 figure {
-  padding: 10px;
+  padding: 0px;
+
 }
 
 h3 {
   background-image: url("https://i.pinimg.com/originals/99/ab/12/99ab125f031df4236053b55199390682.jpg?");
   padding: 10px;
   border-radius: 10px;
+  filter: grayscale(70%);
 }
 
 
 .portrait:hover {
   filter: none;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
 }
 
 .portrait {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  filter: grayscale(80%);
-  border-radius: 24px;
+  filter: grayscale(90%);
+  border-radius: 15px;
+  z-index: 100;
 }
 
 
