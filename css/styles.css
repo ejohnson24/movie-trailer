@@ -113,7 +113,6 @@ blockquote {
   font-family: "Lato", sans-serif;
   height: 130px;
   background-color: #3D98A3;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,6 +255,8 @@ footer {
 
 
 @media only screen and (max-width: 1200px) {
+
+  
   main { 
    display: grid;
    grid-template-columns: 200px 1fr;
@@ -263,7 +264,27 @@ footer {
    grid-auto-rows: auto;
  }
  
-    .kikiImage {
+
+ .portrait:hover {
+  width: 210px;
+  height: 210px;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+}
+
+.cast {
+  height: 850px;
+}
+
+.dark {
+  background-size: 150%;
+  background-position: 50% 0%;
+}
+
+.kikiImage {
    grid-column-start: 1;
    grid-row-start: 1;
    width: 350px;
@@ -271,45 +292,28 @@ footer {
   padding-right: 100px;
  }
     
-    body {  
-   background-image: url("https://i.pinimg.com/originals/ba/09/fa/ba09fa142f3918296fa38ba88ac2a418.png");
-   background-color: #071237;
-   width: 100%;
- }
-    
-    .info {
+ body {  
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("/KorikoRooftop.png");
+  background-color: #071237;
+  background-size: 150%;
+  object-fit: cover;
+}
+.info {
   grid-row-start: 2;
-   width: 100%;
+  grid-column-start: 2;
+   grid-column-end: 2;
    color: white;
-   font-family: "Lora", sans-serif;
-   height: 500px;
-   background-image: url("https://i.pinimg.com/originals/fd/b1/37/fdb1379da1ef7a5d521458cacdeab7b4.jpg");
-   background-size: cover;
-   background-position: 110%;
+   font-family: "Lato", sans-serif;
+   height: 130px;
+   background-color: #3D98A3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 16px;
  }
-    
-    footer {
-   background-color: #CD5C5C;
-   grid-row-start: 5;
-   grid-column-start: 1;
-   grid-column-end: 4;
-   padding-left: 50px;
-   padding-top: 100px;
-   padding-bottom: 10px;
-   font-family: "Lora", serif;
-   font-size: 1.2em;
-   color: white;
-   background-image: url("https://coverfiles.alphacoders.com/597/59770.jpg");
-   background-size: cover;
-   filter: grayscale(20%);
- }
-    
-  .text {
-   width: 400px;
-   padding: 200px;
-   padding-left: 200px;
-   font-size: 18px;
- }  
+
  
  }
 
